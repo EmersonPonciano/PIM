@@ -1,8 +1,9 @@
 import React, { useState, useEffect } from 'react';
 import { useHistory, useParams } from 'react-router-dom';
-import './styles.css';
+import './style.css';
 import firebaseDb from '../../config/firebase.js';
 import { toast } from 'react-toastify';
+import Header from '../../components/Header/';
 
 const AddEdit = () => {
   const initialState = {
@@ -83,6 +84,7 @@ const AddEdit = () => {
   };
   return (
     <div className="add-edit">
+      <Header/>
       <form
         className="add-edit__form"
         onSubmit={handleSubmit}

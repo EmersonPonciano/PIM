@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import './styles.css';
+import './style.css';
 
 const Header = () => {
   const [activeTab, setActiveTab] = useState("Home");
@@ -8,7 +8,7 @@ const Header = () => {
     <div className="header">
       <p className="logo">AutoSys</p>
       <div className="header-right">
-        <Link to="/">
+        <Link to="/home">
           <p
             className={`${activeTab === "Home" ? "active" : ""}`}
             onClick={() => setActiveTab("Home")}
@@ -18,8 +18,8 @@ const Header = () => {
         </Link>
         <Link to="/add">
           <p
-            className={`${activeTab === "AddContact" ? "active" : ""}`}
-            onClick={() => setActiveTab("Add Contact")}
+            className={`${activeTab === "AddVehicle" ? "active" : ""}`}
+            onClick={() => setActiveTab("Add Vehicle")}
           >
             Adicionar veículo
           </p>

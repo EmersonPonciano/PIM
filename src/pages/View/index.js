@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import firebaseDb from '../../config/firebase.js';
 import { useParams, Link, useHistory } from 'react-router-dom';
-import './styles.css';
+import './style.css';
 
 const View = () => {
   const [data, setData] = useState({});
@@ -57,10 +57,10 @@ const View = () => {
                 <br />
                 <br />
 
-                <Link to="/">
+                <Link to="/home">
                   <button
                     className="btn btn-edit"
-                    onClick={() => history.push("/")}
+                    onClick={() => history.push("/home")}
                   >
                     Voltar
                   </button>

@@ -1,8 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import firebaseDb from '../../config/firebase.js';
 import { Link } from 'react-router-dom';
-import './styles.css';
+import './style.css';
 import { toast } from 'react-toastify';
+import Header from '../../components/Header/';
+
 
 const Home = () => {
   const [data, setData] = useState({});
@@ -35,6 +37,7 @@ const Home = () => {
   };
   return (
     <div className="home">
+      <Header/>
       <table className="styled-table">
         <thead>
           <tr>

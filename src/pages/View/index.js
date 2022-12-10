@@ -43,6 +43,14 @@ const View = () => {
                   <span>{data[id].placa}</span>
                   <br />
                   <br />
+                  <strong>Proprietário: </strong>
+                  <span>{data[id].proprietario}</span>
+                  <br />
+                  <br />
+                  <strong>Telefone: </strong>
+                  <span>{data[id].telefone}</span>
+                  <br />
+                  <br />
                   <strong>Descrição dos serviços: </strong>
                   <span>{data[id].descricao}</span>
                   <br />

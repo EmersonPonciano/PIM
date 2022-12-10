@@ -47,7 +47,7 @@ const View = () => {
                   <span>{data[id].descricao}</span>
                   <br />
                   <br />
-                  <strong>Horário de entrada: </strong>
+                  <strong>Data de entrada: </strong>
                   <span>{data[id].horarioEntrada}</span>
                   <br />
                   <br />

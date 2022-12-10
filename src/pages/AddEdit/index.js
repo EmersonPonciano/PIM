@@ -148,7 +148,7 @@ const AddEdit = () => {
           onChange={handleInputChange}
         />
 
-        <label htmlFor="horarioEntrada">Horário de entrada:</label>
+        <label htmlFor="horarioEntrada">Data de entrada:</label>
         <input
           type="text"
           id="horarioEntrada"

@@ -45,7 +45,7 @@ const Home = () => {
             <th>Veículo</th>
             <th>Ano</th>
             <th>Proprietário</th>
-            <th>Horário de entrada</th>
+            <th>Data de entrada</th>
             <th>Ações</th>
           </tr>
         </thead>

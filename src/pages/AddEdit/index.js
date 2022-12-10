@@ -79,7 +79,7 @@ const AddEdit = () => {
           }
         });
       }
-      setTimeout(() => history.push("/"), 500);
+      setTimeout(() => history.push("/home"), 500);
     }
   };
   return (

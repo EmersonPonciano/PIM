@@ -16,9 +16,8 @@ const Signup = () => {
     try {
     const user = await auth.createUserWithEmailAndPassword(email, senha);
     navigate.push("/home");
-    console.log(user);
     } catch (error) {
-      console.log(error.message)
+      toast.error(error.message = "Email inválido");
     }
   }
 

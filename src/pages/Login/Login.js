@@ -15,9 +15,8 @@ const Login = () => {
     try {
     const user = await auth.signInWithEmailAndPassword(email, senha);
     navigate.push("/home");
-    console.log(user);
     } catch (error) {
-      console.log(error.message)
+      toast.error(error.message = "Usuário ou senha inválido(s)");
     }
   }
 
